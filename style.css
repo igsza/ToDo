@@ -1,0 +1,126 @@
+/* Geral */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    border-radius: 5px;
+    padding: .3rem 0.6rem; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: aliceblue;
+}
+
+button:hover > i {
+    color: aliceblue;
+}
+
+button i {
+    color: #102f5e;
+    pointer-events: none;
+}
+
+input, select {
+    padding: 0.25rem 0.5rem;
+    border-radius: 7px;
+}
+
+.hide {
+    display: none;
+}
+
+/* header */
+
+.todo-container {
+    max-width: 500px;
+    margin: 5rem auto 0;
+    background-color: chocolate;
+    padding: 1.5rem;
+    border-radius: 16px;
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 3px solid #102f5e;
+}
+
+/* form */
+
+#todo-form, #edit-form {
+    padding: 1rem;
+    border-bottom: 1px solid #102f5e;
+}
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+}
+
+.form-control input {
+    margin-right: 4px;
+}
+
+#cancel-edit-btn {
+    margin-top: 1rem;
+}
+
+/* filtro e pesquisa */
+
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #102f5e;
+    display: flex;
+}
+
+#toolbar h4 {
+    margin-bottom: 0.5rem;
+}
+
+#search {
+    border-right: 1px solid #102f5e;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#search form {
+    display: flex;
+}
+
+#search input {
+    width: 100%;
+    margin-right: 0.3rem;
+}
+
+#filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#filter select {
+    flex: 1;
+}
